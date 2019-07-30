@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( kMeans_copy )
+set(OpenCV_DIR /home/pradeep/Desktop/opencv_buildd/opencv)
+find_package( OpenCV REQUIRED )
+add_executable( kMeans_copy kMeans_copy.cpp)
+target_link_libraries( kMeans_copy ${OpenCV_LIBS} )
